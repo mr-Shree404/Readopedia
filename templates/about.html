@@ -1,0 +1,61 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}
+About Readopedia
+{% endblock title %}
+
+{% block content %}
+<div class="w-100 d-flex flex-column justify-content-start">
+
+    <div class="container">
+        <h2 class="p-4">About Readopedia</h2>
+    </div>
+
+    <div class="mt-4 mx-auto w-75 d-flex flex-column flex-sm-row" style="max-width:50em;">
+        <div class="w-100">
+            <p>ONLINE REVIEWS</p>
+            <h3>Explore Books with Readopedia</h3>
+            <p>
+                Welcome to Readopedia, your ultimate online destination for e-books spanning various categories. Discover a vast collection of e-books, share your thoughts through reviews, and connect with like-minded readers.
+
+            </p>
+
+            <a class="btn btn-dark rounded-0 fw-bold" href="{% url 'book_list' %}" aria-label="check books">
+                Discover Our Collection
+            </a>
+        </div>
+        <div class="w-100 d-flex justify-content-center">
+            <img class="w-75" src="{% static 'images/about/person-reading.png' %}" alt="person reading">
+        </div>
+    </div>
+
+    <div class="w-100 py-5 bg-dark" style="min-height: 35em;">
+
+        <div class="mx-auto d-flex flex-column flex-sm-row" style="max-width:50em;">
+
+            <div class="w-100 position-relative d-flex justify-content-center" style="height: 20em;">
+                <div class="w-75 rounded-circle bg-primary rounded-5 position-absolute"
+                    style="height: 90%; top: 12%; left: 20%;">
+                </div>
+                <img class="w-75 rounded-circle position-absolute" src="{% static 'images/about/person-smiling.jpg' %}"
+                    alt="person reading">
+                <img class="w-25 position-absolute start-0" style="bottom: 0em;"
+                    src="{% static 'images/books-logo.png' %}" alt="Readopedia logo">
+            </div>
+
+            <div class="w-100 text-white px-4 ">
+                <p>Get access to high-quality reviews!</p>
+                <h3>Join the Readopedia Community <b>Today</b></h3>
+<p>Explore a world of diverse e-books, share your insights, and connect with like-minded individuals. Join us and immerse yourself in the vibrant community of readers at Readopedia!</p>
+                <a class="btn btn-light rounded-0 fw-bold" href="{% url 'account_signup' %}" aria-label="sign up">
+                    Sign up for <b>Free</b>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Continue updating the content for the remaining sections -->
+
+</div>
+{% endblock content %}
